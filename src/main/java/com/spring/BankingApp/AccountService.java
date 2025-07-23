@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -68,7 +69,7 @@ public class AccountService {
         return account; // Return 200 OK
     }
 
-    @Transacional
+    @Transactional
     public String transfer(Long fromId, Long toId, double amount){
 
         Account fromAccount = accountRepository.findById(fromId).orElse(null);
