@@ -68,6 +68,7 @@ public class AccountService {
         return account; // Return 200 OK
     }
 
+    @Transacional
     public String transfer(Long fromId, Long toId, double amount){
 
         Account fromAccount = accountRepository.findById(fromId).orElse(null);
