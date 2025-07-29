@@ -113,11 +113,6 @@ src
 | Admin | View all users, transactions, delete users   |
 | User  | Manage own account, transfer, view history    |
 
----
-
-## 📷 Screenshots (Optional)
-
-> Add Postman screenshots, Swagger UI, or terminal output here.
 
 ---
 
