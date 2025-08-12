@@ -10,7 +10,6 @@ import lombok.Setter;
 @Entity
 public class Account {
 
-
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
